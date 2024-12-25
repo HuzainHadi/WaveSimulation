@@ -42,7 +42,7 @@ intensity_2d_initial = calculate_2d_intensity(a_initial, wavelength_initial, scr
 
 # Create figure and axes
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
-plt.subplots_adjust(bottom=0.3)
+plt.subplots_adjust(bottom=0.4)  # Increased bottom margin for more space
 
 # Plot 1D diffraction pattern
 intensity_initial = diffraction_intensity(a_initial, wavelength_initial, theta)
@@ -58,9 +58,12 @@ ax2.set_title("2D Diffraction Intensity Map", fontsize=14)
 ax2.set_xlabel("Screen X (m)")
 ax2.set_ylabel("Screen Y (m)")
 
+# Change horizontal axis tick labels to vertical in 2D plot
+ax2.tick_params(axis='x', labelrotation=90)
+
 # Add sliders
-ax_a = plt.axes([0.15, 0.2, 0.65, 0.03])
-ax_lambda = plt.axes([0.15, 0.15, 0.65, 0.03])
+ax_a = plt.axes([0.15, 0.25, 0.65, 0.03])  # Adjusted positions for extra spacing
+ax_lambda = plt.axes([0.15, 0.2, 0.65, 0.03])
 slider_a = Slider(ax_a, 'Slit Width (m)', 1e-6, 10e-6, valinit=a_initial, valstep=1e-7)
 slider_lambda = Slider(ax_lambda, 'Wavelength (m)', 400e-9, 700e-9, valinit=wavelength_initial, valstep=10e-9)
 
