@@ -73,11 +73,11 @@ pip install numpy matplotlib
 
 ### **1D Diffraction Pattern**
 
-![1D Diffraction Pattern](attachemnt:1D_plot.png)
+![1D Diffraction Pattern](1D_plot.png)
 
 ### **2D Intensity Heatmap**
 
-![2D Heatmap](attachment:2D_plot.png)
+![2D Heatmap](2D_plot.png)
 
 ## **Physics Background**
 
