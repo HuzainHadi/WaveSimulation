@@ -20,17 +20,14 @@ This project simulates the **diffraction pattern** produced by a single slit whe
 The program uses the following physics principles and mathematical equations:
 
 1. **Intensity Calculation**:
-   The intensity of the diffraction pattern is given by:
-   \[
-   I(\theta) = \left( \frac{\sin(\beta)}{\beta} \right)^2, \quad \beta = \frac{\pi a \sin\theta}{\lambda}
-   \]
+   The intensity of the diffraction pattern is given by: $$I(\theta) = \left( \frac{\sin(\beta)}{\beta} \right)^2, \quad \beta = \frac{\pi a \sin\theta}{\lambda}$$
    where:
 
-   - \( a \): Slit width
-   - \( \lambda \): Wavelength
-   - \( \theta \): Diffraction angle
+   - $a$: Slit width
+   - $\lambda$: Wavelength
+   - $\theta$: Diffraction angle
 
-2. **Heatmap Calculation**:
+3. **Heatmap Calculation**:
    Intensity values are computed for a 2D grid of points on a screen, representing the light intensity distribution.
 
 ## **Requirements**
@@ -62,8 +59,8 @@ pip install numpy matplotlib
 
 3. Adjust the sliders for:
 
-   - **Slit Width** (\( a \))
-   - **Wavelength** (\( \lambda \))
+   - **Slit Width** ($a$)
+   - **Wavelength** ($\lambda$)
 
 4. Observe the changes in:
    - The **1D diffraction intensity plot**.
